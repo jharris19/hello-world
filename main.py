@@ -1,3 +1,4 @@
+import os
 
 
 def hello(name):
@@ -5,4 +6,4 @@ def hello(name):
 
 
 if __name__ == '__main__':
-    hello("pyCharm")
+    hello(os.getenv('HELLO_NAME', 'pyCharm'))
